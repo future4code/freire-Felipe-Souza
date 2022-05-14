@@ -1,5 +1,5 @@
 // EXEMPLOS DE IMPLEMENTAÇÃO ---------------------------------------------------------------
-/*
+
 // EXERCÍCIO 0A
 function soma(num1, num2) {
  let num1 = 1
@@ -15,7 +15,7 @@ function imprimeMensagem() {
 
   console.log(mensagem)
 }
-*/
+
 // EXERCÍCIOS PARA FAZER ------------------------------------------------------------------
 
 // EXERCÍCIO 01
@@ -105,21 +105,39 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
   string2 = string2.toLowerCase()
   return string1 === string2
 }
-/*
+
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
-  
+    const anoAtual = Number(prompt("Informe o ano atual"))
+    const anoNascimento = Number(prompt("Informe o ano de nascimento"))
+    const anoExpedicao = Number(prompt("Informe o ano de expedição do RG"))
+
+    let idade = anoAtual - anoNascimento
+    let validade = anoAtual - anoExpedicao
+
+    let menor = idade <=20 && validade >=5      
+    let medio = idade > 20 && idade <= 50 && validade >= 10
+    let maior = idade > 50 && validade >= 15 
+
+    console.log(menor || medio || maior)
 }
+
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
-  // implemente sua lógica aqui
-
+  
+  const bisx1 = ano % 400 === 0
+  const bisx2 = ano % 4 === 0 && ano % 100 !== 0
+  return bisx1 || bisx2
 }
 
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
-  // implemente sua lógica aqui
+  const maior = prompt('Você é maior de 18 anos?')
+  const ensino = prompt('Você possui ensino médio?')
+  const disp = prompt('Você possui disponibilidade exclusiva durante os horários do curso?')
 
+  let res = maior === "sim" && ensino === "sim" && disp === "sim"
+  
+  console.log(res)
 }
-*/
