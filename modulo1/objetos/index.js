@@ -105,8 +105,7 @@ function compra(laranja, morango, uva) {
     compraMorango = sacolao.carrinho.push(morango.nome)
     compraUva = sacolao.carrinho.push(uva.nome)
     compraFrutas = (compraLaranja, compraMorango, compraUva)
-    return compraFrutas
+    return sacolao.carrinho
 }
 console.log(compra(laranja, morango, uva))
-console.log(sacolao.carrinho)
 */
