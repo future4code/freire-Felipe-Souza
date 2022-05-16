@@ -85,7 +85,7 @@ console.log(imprimePessoa1(pessoa1))
 # Questão 3 #
 
 let sacolao = {
-    carrinho: [],
+    carrinho: []
 }
 const laranja = {
     nome: "Laranja",
@@ -108,4 +108,88 @@ function compra(laranja, morango, uva) {
     return sacolao.carrinho
 }
 console.log(compra(laranja, morango, uva))
+
+
+=======================================================
+DESAFIO 1
+=======================================================
+
+function pessoa (nome, idade, profissao) {
+    nome = prompt(`Informe seu nome`)
+    idade = prompt(`Informe sua idade`)
+    profissao = prompt(`Informe sua profissão`)
+        res = {
+            Nome: nome, 
+            Idade: idade, 
+            Profissao: profissao
+        }
+    return console.log(res, typeof(res))
+}
+pessoa()
+
+
+=====================================================
+DESAFIO 2
+=====================================================
+
+function filmes(filme1, filme2) {
+    filme1 = { 
+        nome: "Interestelar",
+        ano: 2014
+    }
+    filme2 = {
+        nome: "Planeta dos Macacos",
+        ano: 1968
+    }
+
+    anoAtual = 2022
+
+    idade1 = anoAtual - filme1.ano
+    idade2 = anoAtual - filme2.ano
+
+    res1 = idade1 > idade2
+    res2 = idade1 === idade2
+
+    return console.log(`O primeiro filme foi lançado antes do segundo? ${res1}
+    O primeiro filme foi lançado no mesmo ano do segundo? ${res2}`)
+}
+console.log(filmes())
+
+
+=======================================================================
+DESAFIO 3
+=======================================================================
+
+let sacolao = {
+    carrinho: []
+}
+const laranja = {
+    nome: "Laranja",
+    disponibilidade: true
+}
+const morango = {
+    nome: "Morango",
+    disponibilidade: true
+}
+const uva = {
+    nome: "Uva",
+    disponibilidade: true
+}
+function compra(laranja, morango, uva) {
+
+    compraLaranja = sacolao.carrinho.push(laranja.nome)
+    compraMorango = sacolao.carrinho.push(morango.nome)
+    compraUva = sacolao.carrinho.push(uva.nome)
+    compraFrutas = (compraLaranja, compraMorango, compraUva)
+    return sacolao.carrinho
+}
+console.log(compra(laranja, morango, uva))
+
+function disponibilidade(Laranja) {
+    Laranja = laranja.nome
+    temLaranja = sacolao.carrinho.includes("Laranja")
+    naoTemLaranja = sacolao.carrinho.includes("Maçã")
+    return temLaranja && naoTemLaranja
+}
+console.log(disponibilidade())
 */
