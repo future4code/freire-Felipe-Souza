@@ -129,6 +129,15 @@ td button {
     height: 30px;
     border-radius: 5px;
     color: black;
+    font-weight: bold;    
+}
+
+td button:hover {
+    background-color: #e4bd10;
+}
+
+td button:active {
+    color: #fff;
 }
 
 .container-do-search {
