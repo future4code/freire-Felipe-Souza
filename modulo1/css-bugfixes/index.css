@@ -107,6 +107,12 @@ div:last-child {
 
 table {
     width: 60%;
+    text-align: center;
+}
+
+.imgTabela {
+    height: 30px;
+    width: 30px;
 }
 
 td button {
