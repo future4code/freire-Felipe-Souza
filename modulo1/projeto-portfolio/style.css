@@ -10,6 +10,9 @@ body {
 }
 /* ==================== MENU SUPERIOR =================== */ 
 
+#cabecalho {
+    display: block;
+}
 .nav {
     display: flex;
     align-items: center;
@@ -65,7 +68,13 @@ body {
 
 /* ==================== TITULO E DESCRIÇÃO ===================== */
 
+#title_desc {
+    display: block;
+    position: relative;
+}
+
 #title_desc h1 {
+
     display: inline-block;
     position: absolute;
     text-align: center;
@@ -85,4 +94,103 @@ body {
     font-family: 'Lexend Deca', sans-serif;
     color: #03318C;
     font-weight: lighter;
+}
+
+/* =========== MENU IMAGENS =========== */
+
+#box {
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin-top: 80px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.imagem1 {
+    display: block;
+    position: relative;
+    list-style: none;
+    margin-left: 150px;
+    margin-top: 400px;
+   
+}
+
+.imagem1 img {
+    display: block;
+    position: absolute;
+    transition: .5s;
+    z-index: 999;
+    border-radius: 5px;
+}
+
+.imagem2 {
+    display: block;
+    position: relative;
+    list-style: none;
+    margin-left: 525px;
+    margin-top: -70px;
+}
+
+.imagem2 img {
+    display: block;
+    position: absolute;
+    transition: .5s;
+    z-index: 999;
+    border-radius: 5px;
+}
+
+.imagem3 {
+    display: block;
+    position: relative;
+    list-style: none;
+    margin-left: 900px;
+    margin-top: -70px;
+}
+
+.imagem3 img {
+    display: block;
+    position: absolute;
+    transition: .5s;
+    z-index: 999;
+    border-radius: 5px;
+}
+
+.conteudo {
+    display: block;
+    overflow: hidden;
+    width: 300px;
+    height: 70px;
+    background-color: #03318C;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.conteudo a {
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.conteudo p {
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 5px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.imagem1:hover img {
+    margin-top: 60px;
+}
+
+.imagem2:hover img {
+    margin-top: 60px;
+}
+
+.imagem3:hover img {
+    margin-top: 60px;
 }
