@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color:#D9D9D9;
+}
+/* ==================== MENU SUPERIOR =================== */ 
+
+.nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    float: right;
+    padding: 20px;
+}
+
+.nav__title {
+    display: flex;
+    list-style-type: none;
+    float: left;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.link_title {
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 40px;
+    color: #03318C;
+}
+
+.nav__item {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav__link {
+    padding: 5px 0px;
+    position: relative;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #F29F05;
+    text-transform: uppercase;
+}
+
+.nav__link:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background: #D95204;
+    transition: all 0.4s ease;
+}
+
+.nav__link:hover:before {
+    width: 100%;
+}
+
+/* ==================== TITULO E DESCRIÇÃO ===================== */
+
+#title_desc h1 {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    margin-top: 200px;
+    margin-inline-start: 100px;
+    font-size: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #D95204;
+}
+
+#title_desc h2 {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    margin-top: 300px;
+    margin-inline-start: 110px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #03318C;
+    font-weight: lighter;
+}
