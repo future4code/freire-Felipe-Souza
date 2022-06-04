@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: mediumvioletred;
+    padding: 10px 10px 10px 10px;
+}
+
+header button {
+    display: flex;
+}
+
+header > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+header > div img {
+    display: flex;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2d0e0;
+    justify-content: flex-start;
+    width: 180px;
+    height: auto;
+}
+
+aside > nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+aside > nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.icones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.icones > div {
+    display: flex;
+    flex-direction: column;
+    height: 15px;
+    width: 15px;
+}
+
+.setinha {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.setinha > div {
+    display: flex;
+    flex-direction: column;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: mediumvioletred;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 5px;
+    width: 90%;
+    height: auto;
+}
+
+main > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.bolo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-around;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgb(194, 194, 194);
+}
+
+.foto img {
+    width: 200px;
+    height: 200px;
+}
+
+.texto {
+    text-align: center;
+}
+
+.texto h1 {
+    font-size: 25px
+}
