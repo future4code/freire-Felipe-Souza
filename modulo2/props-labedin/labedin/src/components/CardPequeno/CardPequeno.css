@@ -1,0 +1,38 @@
+.littlecard-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+.email img {
+    width: 30px;
+    height: auto;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+.endereco img {
+    width: 30px;
+    height: auto;
+}
