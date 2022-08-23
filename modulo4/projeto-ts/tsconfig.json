@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es6",                                  /* Set the JavaScript language version for emitted */
+    "module": "commonjs",                                /* Specify module code generation */
+    "sourceMap": true,                                /* Create source map files for emitted JavaScript files. */
+    "outDir": "./build",                                   /* Specify an output folder for all emitted files. */
+    "rootDir": "./src",
+    "noImplicitAny": true,                          /* Enable error reporting for expressions and declarations with */
+    "removeComments": true,                            /* Do not emit comments to output. */
+  }
+}
