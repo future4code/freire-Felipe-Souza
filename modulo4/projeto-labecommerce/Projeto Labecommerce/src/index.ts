@@ -1,30 +1,20 @@
-import express, { Express } from "express";
-import cors from "cors";
-import { AddressInfo } from "net";
-
-const app: Express = express()
-
-app.use(express.json())
-app.use(cors())
-
+import { app } from "./app"
+import { createUser } from "./enpoints/createUser"
+import { createProduct } from "./enpoints/createProduct"
+import { createPurchases } from "./enpoints/createPurchases"
+import { getAllUsers } from "./enpoints/getAllUsers"
+import { getAllProducts } from "./enpoints/getAllProducts"
+import { getPurchasesByUserId } from "./enpoints/getPurchasesByUserId"
 
 
-
-
-
-
-
-
+app.get("/users", getAllUsers)
+app.get("/users/:userId/purchases", getPurchasesByUserId)
+app.post("/users", createUser)
+app.get("/products", getAllProducts)
+app.post("/products", createProduct)
+app.post("/purchases", createPurchases)
 
 
 
 
 
-const server = app.listen(process.env.PORT || 3003, () => {
-    if(server) {
-        const address = server.address() as AddressInfo;
-        console.log(`Servidor rodando na porta http://localhost:${address.port}`)
-    } else {
-        console.error("Falha ao se conectar com o servidor")
-    }
-});

@@ -1,0 +1,27 @@
+POST http://localhost:3003/users
+Content-Type: application/json
+
+{
+    "name": "ciclano",
+    "email": "ciclano@fula.com",
+    "password": "hgj2kA15mt6U89"
+}
+
+###
+
+GET http://localhost:3003/users
+
+###
+
+GET http://localhost:3003/products
+
+###
+
+POST http://localhost:3003/products
+Content-Type: application/json
+
+{
+    "name": "quadro doguinho",
+    "price": 2000.10,
+    "image_url": "https://i.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U"
+}
